@@ -8,7 +8,18 @@ The names of the dataframe "database_extract" were changed with the functiom tol
 The above dataframe was grouped by subject and activities with the function group_by(package "dplyr").Then, this dataframe was
 summarized with the mean of all variables  for each activity and each subject. This was computed with the function summarise_all(package "dplyr") and saved in the dataframe "summarize_database".
 
-The end database has the following variables with their respective units:
+The end database has the following variables with their respective levels:
+
+activities:Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
+subject: group of 30 volunteers.
+domain: time (t) and frequency(f) domain.
+variable: variables used on the feature vector
+- body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ). 
+- Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).
+- magnitude of the three-dimensional signals  calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+summary: Mean value (mean) and standard deviation (std) that were estimated from these signals.
+axial: 3-axial linear acceleration and 3-axial angular velocity: x, y and z.
+mean(value): average of each variable for each activity and each subject.
 
 
 
